@@ -25,17 +25,16 @@ def get_masses(atoms):
         masses.append(element.AtomicMass)
     return masses
 
-
+# Calculate center of mass
 def center_of_mass(atoms, coords, masses):
-    # Calculate center of mass
     RxCM=np.sum(masses*coords[:,0])/sum(masses)
     RyCM=np.sum(masses*coords[:,1])/sum(masses)
     RzCM=np.sum(masses*coords[:,2])/sum(masses)
     xyzCOM=coords-np.array([RxCM*np.ones(len(atoms)), RyCM*np.ones(len(atoms)), RzCM*np.ones(len(atoms))]).T
     return xyzCOM
-
+    
+# Calculate moment of inertia tensor
 def moment_of_inertia(atoms, xyzCOM):
-    # Calculate moment of inertia tensor
     I=np.zeros((3,3))
     
     for i in range(0,3):
