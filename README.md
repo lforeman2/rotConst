@@ -44,3 +44,6 @@ $$I_{yy} = \sum_{k=1}^n m_{k} ( x_{k}^2 + z_{k}^2 )$$
 $$I_{zz} =  \sum_{k=1}^n m_{k} ( x_{k}^2 + y_{k}^2 )$$  
 
 $$I_{ij} = -\sum_{k=1}^n m_{k} ( i_{k}^2 + j_{k}^2 )$$  
+
+## To run the program, execute the following one liner:
+```calculator(input_file='geom.xyz', units='wavenumber')```
