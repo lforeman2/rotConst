@@ -48,7 +48,7 @@ $$I_{ij} = -\sum_{k=1}^n m_{k} ( i_{k}^2 + j_{k}^2 )$$
 ## To run the program:
 ```calculator(input_file='geom.xyz', units='wavenumber')```  
 The units options are 'wavenumber' or 'gigahertz'.  
-The input file should have the following format:  
+The input file should have the following format (using water as an example):  
 ```
   3
 Angstrom
