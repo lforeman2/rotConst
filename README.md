@@ -45,5 +45,14 @@ $$I_{zz} =  \sum_{k=1}^n m_{k} ( x_{k}^2 + y_{k}^2 )$$
 
 $$I_{ij} = -\sum_{k=1}^n m_{k} ( i_{k}^2 + j_{k}^2 )$$  
 
-## To run the program, execute the following one liner:
-```calculator(input_file='geom.xyz', units='wavenumber')```
+## To run the program:
+```calculator(input_file='geom.xyz', units='wavenumber')```  
+The units options are 'wavenumber' or 'gigahertz'.  
+The input file should have the following format:  
+```
+  3
+Angstrom
+  O  0.00000   0.00000   0.11730
+  H  0.00000   0.75720  -0.4692
+  H  0.00000  -0.75720  -0.4692
+```
