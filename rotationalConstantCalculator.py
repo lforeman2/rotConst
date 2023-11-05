@@ -63,7 +63,7 @@ def rot_const(units='wavenumber'):
     return B
 
 
-def calculator(input_file='geom.xyz', units='wavenumber'):
+def bCalc(input_file='geom.xyz', units='wavenumber'):
     atoms, coords=get_input(input_file)
     masses=get_masses(atoms)
     xyzCOM=center_of_mass(atoms, coords, masses)
