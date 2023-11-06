@@ -17,7 +17,7 @@ Input molecular geometry input coordinates ('geom.xyz') should be in units of An
 The rotational constants are given by:  
 $$B=\frac{h}{8\pi^2cI}$$  
 
-For a polyatomic molecule, I is the moment of inertia tensor:
+For a polyatomic molecule with $k$ atoms, $I$ is the moment of inertia tensor:
 
   $$ 
   I=
@@ -37,13 +37,13 @@ $$
     \end{bmatrix}
 $$  
 
-$$I_{xx} = \sum_{k=1}^n m_{k} ( y_{k}^2 + z_{k}^2 )$$   
+$$I_{xx} = \sum_{k} m_{k} ( y_{k}^2 + z_{k}^2 )$$   
 
-$$I_{yy} = \sum_{k=1}^n m_{k} ( x_{k}^2 + z_{k}^2 )$$  
+$$I_{yy} = \sum_{k} m_{k} ( x_{k}^2 + z_{k}^2 )$$  
 
-$$I_{zz} =  \sum_{k=1}^n m_{k} ( x_{k}^2 + y_{k}^2 )$$  
+$$I_{zz} =  \sum_{k} m_{k} ( x_{k}^2 + y_{k}^2 )$$  
 
-$$I_{ij} = -\sum_{k=1}^n m_{k} ( i_{k}^2 + j_{k}^2 )$$  
+$$I_{ij} = -\sum_{k} m_{k} ( i_{k}^2 + j_{k}^2 ) $$
 
 ## To run the program:
 ```bCalc(input_file='geom.xyz', units='wavenumber')```  
